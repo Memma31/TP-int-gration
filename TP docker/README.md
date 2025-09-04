@@ -59,4 +59,30 @@ PS C:\Users\lulu1\Documents\Importants\M2\docker\TP-int-gration> docker rmi a0df
 Untagged: hello-world:latest
 Deleted: sha256:a0dfb02aac212703bfcb339d77d47ec32c8706ff250850ecc0e19c8737b18567
 
-PS C:\Users\lulu1\Documents\Importants\M2\docker\TP-int-gration> 
+EXERCICE 4
+PS C:\Users\lulu1\Documents\Importants\M2\docker\TP-int-gration> docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+a2da0c0f2353: Pulling fs layer
+716cdf61af59: Pull complete
+c3741b707ce6: Pull complete
+e5d9bb0b85cc: Pull complete
+14a859b5ba24: Pull complete
+14e422fd20a0: Pull complete
+b1badc6e5066: Pull complete
+Digest: sha256:33e0bbc7ca9ecf108140af6288c7c9d1ecc77548cbfd3952fd8466a75edefe57
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+
+PS C:\Users\lulu1\Documents\Importants\M2\docker\TP-int-gration> docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+b66a35e82281   nginx     "/docker-entrypoint.…"   28 seconds ago   Up 28 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   mon_nginx
+
+PS C:\Users\lulu1\Documents\Importants\M2\docker\TP-int-gration> docker stop mon_nginx 
+mon_nginx
+PS C:\Users\lulu1\Documents\Importants\M2\docker\TP-int-gration> docker rm mon_nginx 
+>> ^C
+PS C:\Users\lulu1\Documents\Importants\M2\docker\TP-int-gration> docker rm mon_nginx
+mon_nginx
+
+
